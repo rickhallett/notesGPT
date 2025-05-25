@@ -11,6 +11,7 @@ import { actionWithUser } from './utils';
 import Instructor from '@instructor-ai/instructor';
 
 const togetherApiKey = process.env.TOGETHER_API_KEY ?? 'undefined';
+console.log('togetherApiKey', togetherApiKey);
 
 // Together client for LLM extraction
 const togetherai = new OpenAI({
